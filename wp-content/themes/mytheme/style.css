@@ -1,0 +1,34 @@
+/*
+Theme Name: Synex Jersey Shop
+Theme URI: http://localhost/wordpress
+Author: Sayem
+Author URI: http://localhost/wordpress
+Description: A custom WordPress theme for small shop whose have little amount of products to sale
+Version: 1.0
+*/
+/* body{
+	background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+} */
+#ttr_sidebar
+{
+border-left: 1px solid black;
+padding-top: 10px;
+padding-left: 30px;
+}
+#ttr_footer
+{
+width: 100%;
+border-top: 1px #a2a2a2 solid;
+text-align: center;
+}
+.title
+{
+font-size: 11pt;
+font-family: verdana;
+font-weight: bold;
+}
+.table{
+	border: 1px solid black;
+}

@@ -1,0 +1,230 @@
+/*
+Theme Name: Karate School wordpress
+Theme URI: http://localhost/wordpress
+Author: Sayem
+Author URI: https://synexdigital.com
+Author URI: http://localhost/wordpress
+Description: An Amazing WordPress theme for Karate training school. Also showcasing endorship of the school and Karate related Blogs.
+Requires at least: 6.4
+Tested up to: 6.6
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: karatesynex
+one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+
+
+/* Navbar Container */
+.navbar {
+    padding: 15px 0;
+}
+
+/* Navbar Brand */
+.navbar-brand img {
+    height: auto;
+    max-height: 50px;
+}
+
+/* Navbar Toggler (Hamburger icon for mobile) */
+.navbar-toggler {
+    border: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Navbar Links */
+.navbar-nav > li > a {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: #ffce00; /* Color on hover */
+    text-decoration: none;
+}
+
+/* Active Link */
+.navbar-nav > li > a.active {
+    color: #ffce00;
+}
+
+/* Navbar Dropdown */
+.navbar-nav .menu-item-has-children > a::after {
+    content: " ▼"; /* Dropdown arrow */
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .menu-item-has-children:hover > a::after {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.navbar-nav .dropdown-menu {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.navbar-nav .dropdown-menu li a {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+    text-transform: none;
+}
+
+.navbar-nav .dropdown-menu li a:hover {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* Navbar Background for Transparent Header */
+.transparent_header .navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.transparent_header.scrolled .navbar {
+    background-color: #000;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar Logo */
+.logo_light {
+    display: block;
+}
+
+.logo_dark {
+    display: none;
+}
+
+.transparent_header.scrolled .logo_light {
+    display: none;
+}
+
+.transparent_header.scrolled .logo_dark {
+    display: block;
+}
+
+/* Collapse Menu on Mobile */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-collapse.collapse.show {
+    background-color: #000;
+    padding: 15px;
+    z-index: 100;
+}
+
+.navbar-collapse ul {
+    padding-left: 0;
+}
+
+/* Mobile Menu Items */
+.navbar-nav li {
+    list-style-type: none;
+}
+
+.navbar-nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+    color: #ffce00;
+}
+
+/* Dropdown on Mobile */
+.navbar-nav .dropdown-menu {
+    position: relative;
+    background-color: #000;
+}
+
+.navbar-nav .dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+    background-color: #222;
+    color: #ffce00;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .navbar-nav {
+        background-color: #000;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        background-color: #000;
+    }
+
+    .navbar-nav li {
+        width: 100%;
+    }
+
+    .navbar-nav li a {
+        padding: 15px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+    }
+
+    .navbar-collapse {
+        background-color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav li {
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        padding: 0;
+    }
+
+    .navbar-nav .dropdown-item {
+        width: 100%;
+    }
+}
+
+/* Sticky Navbar when scrolled */
+.transparent_header.scrolled .navbar {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    transition: background-color 0.5s ease;
+}
+
+.schedule td:hover{
+    background-color: #F32B56;
+    color: #fff;
+}
+
